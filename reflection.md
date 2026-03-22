@@ -44,6 +44,8 @@ AI helped me understand and know that these test cases were solid because they w
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlist reruns the entire script every time the user interacts with a widget such as clicking a button or even entering text. Which means that without special case handling, all variables would reset based on every interaction. Session state helps us maintain those values across different reruns, for example, the secret number, score, and the game status. By storing these values in st.session_state, we can maintain the game's status and its current progress from the users actions. 
+
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -52,3 +54,5 @@ AI helped me understand and know that these test cases were solid because they w
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One habit or strategy from this project that I want to reuse in future labs or projects is that I want to do test-driven debugging. I documented bugs, fixed them in a proper order, and verified each fix manually and with pytest. This helped me double-check every suggestion first because applying it. Next time I work with code generated through AI, I know to double check each suggestion first without blindly applying it because AI can sometimes give misleading or incorrect ideas. This project changed how I think about AI generated code by showing me that AI is a helpful teammate, however, the one in control is us and that we have the final say in evaluating and confirming each change that the AI suggests. 

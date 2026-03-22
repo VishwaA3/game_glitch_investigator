@@ -29,9 +29,16 @@ It wrote the code, ran away, and now the game is unplayable.
 - [ ] Detail which bugs you found.
 - [ ] Explain what fixes you applied.
 
+The game's purpose is that it is an AI-generated guessing game where the player tries to guess a secret number within a limited number of attempts. Hints like "Go HIGHER!" or "Go LOWER!" help the player guess the correct secret number, and this helps them earn points based on their outcome. 
+
+I found three bugs in this game. The first bug was that the hints were incorrect and misleading, for example, when I entered a lower number, the game would incorrectly tell me to "Go HIGHER!". The second bug was that the game did not end properly even after guessing the correct number or running out of attempts. The third bug was that the 'New Game' button did reset the attempts back to 8, however, the game did not allow me to resume playing again. 
+
+I applied three fixes for each of the bugs in this game. The first fix was correcting the logic of the hints so that "Go HIGHER!" and "Go LOWER!" would be displayed when it matched the player's guess when compared to the secret number. The second fix was fixing the game-ending logic, where it properly checked the number of attempts that were left and set the status to won or lost. The third fix was updating the 'New Game' button to reset all the relevant session state variables such as attempts, score, history, and status so that a new game would start cleanly. 
+
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
+![Screenshot of a winning game of Glitchy Guesser](images/game_screenshot.png)
 
 ## 🚀 Stretch Features
 
